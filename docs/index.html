@@ -22,14 +22,23 @@
                 <div class="header2">
                     <ul>
                         <img class="email" src="assestsc/skills.png" alt="_"/>
-                        <li>Skills</li>  
+                        <li><button style="all: unset; cursor: pointer;" onclick="skill()">
+                             Skills
+                        </button></li>  
                         <img class="email" src="assestsc/project-icon.jpg" alt="_"/>
-                        <li>Resume</li>
+                        <li><a style="color: black;text-decoration: none;" href="https://drive.google.com/file/d/1h-e8Lr-ad30cp2J1aPfI9hqt0coIrOsn/view?usp=sharing">Resume
+                        </a></li>
                         <img class="email" src="assestsc\project-ic.png" alt="ddd"/>
-                        <li>Projects</li>
+                        <li><button style="all: unset; cursor: pointer;" onclick="project()">
+                             Projects
+                        </button></li>
                         <img class="email" src="assestsc\certi.png" alt="ddd"/>
-                        <li>Certifications</li>
-                         <li>Contact</li>
+                        <li><button style="all: unset; cursor: pointer;" onclick="certificate()">
+                             Experience
+                        </button></li>
+                        <li><button style="all: unset; cursor: pointer;" onclick="contact()">
+                             Contact
+                        </button></li>
                     </ul>
                 </div>
 
@@ -218,6 +227,18 @@ improving operational efficiency. I have done this project using React JS and CS
     </div>
 </div>
 <script>
+    function skill(){
+        window.scroll({top:720,behavior:'smooth'})
+    }
+    function project(){
+        window.scroll({top:1020,behavior:'smooth'})
+    }
+    function certificate(){
+        window.scroll({top:1600,behavior:'smooth'})
+    }
+    function contact(){
+        window.scroll({top:2420,behavior:'smooth'})
+    }
 function showFinal() {
     document.getElementsByClassName("project")[0].style.display = "none";
     document.getElementsByClassName("project1")[0].style.display = "block";
